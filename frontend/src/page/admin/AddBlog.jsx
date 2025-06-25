@@ -94,7 +94,7 @@ const AddBlog = () => {
         <p className='mt-4'>Blog Description</p>
         <div className='relative max-w-lg h-74 pb-12 sm:pb-10 pt-2 '>
           <div ref={editorRef}></div>
-          {isAdding && <Loader2 className='w-8 p-2 m-1 animate-spin'/>}
+          {isAdding && <Loader2 className='w-8 p-2 m-1 animate-spin' />}
           <button type='button' disabled={isAdding} onClick={generateContent} className='absolute right-2 bottom-2 px-4 py-1.5
           rounded-full bg-black/70 text-white hover:underline cursor-pointer'>Generate with AI</button>
         </div>

@@ -10,7 +10,7 @@ const app = express();
 await connectDb();
 
 
-app.use(cors({origin: "http://localhost:5173"})); // enable CORS with config
+app.use(cors({origin: ["http://localhost:5173","https://blogx-by-abhay.vercel.app"]})); // enable CORS with config
 app.use(express.json()); // parse JSON bodies
 
 //routes
