@@ -6,7 +6,7 @@ import adminRoute from "./src/routes/admin.routes.js";
 import blogRoutes from "./src/routes/blog.routes.js";
 
 const app = express();
-const PORT = process.env.CURRENT_PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 await connectDb();
 
