@@ -41,7 +41,6 @@ const AddBlog = () => {
         setSubtitle('');
         quillRef.current.root.innerHTML = '';
         setCategory('Startup');
-        isPublished(false);
       } else {
         toast.error(data.message);
       }
