@@ -6,7 +6,6 @@ import adminRoute from "./src/routes/admin.routes.js";
 import blogRoutes from "./src/routes/blog.routes.js";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 await connectDb();
 
@@ -22,6 +21,7 @@ app.get('/', (req, res)=>{
     res.send('API IS RUNNING');
 })
 
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>{
     console.log("Server running on port: ", PORT);
 })
